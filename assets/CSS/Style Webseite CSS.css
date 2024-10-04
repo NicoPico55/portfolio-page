@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #313131;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c25922;
+}
+
+/* Landing Section */
+#landing {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#landing .intro {
+    flex: 2;
+    padding-right: 20px;
+}
+
+#landing h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#landing p {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#landing .images {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#landing .images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+/* Blog Post Style */
+#blog-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
