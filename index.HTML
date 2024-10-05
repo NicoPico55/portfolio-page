@@ -11,34 +11,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="main-content">
-    <header class="section sec1 header active">
+    
+    <header class="section sec1 header active" id="home">
         
     </header>
     <main>
-        <section class="section sec2 über-mich"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 erfolge"></section>
-        <section class="section sec5 kontakt"></section>
+        <section class="section sec2 ueber-mich" id="ueber-mich"></section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 erfolge" id="erfolge"></section>
+        <section class="section sec5 kontakt" id="kontakt"></section>
     </main>
     
     <div class="controls">
-        <div class="control control-1 active-btn">
+        <div class="control control-1 active-btn" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
-        <div class="control control-2">
+        <div class="control control-2" data-id="ueber-mich">
             <i class="fa-solid fa-address-card"></i>
         </div>
-        <div class="control control-3">
+        <div class="control control-3" data-id="portfolio">
             <i class="fa-solid fa-briefcase"></i>
         </div>
-        <div class="control control-4">
+        <div class="control control-4" data-id="erfolge">
             <i class="fa-solid fa-star"></i></i>
         </div>
-        <div class="control control-5">
+        <div class="control control-5" data-id="kontakt">
             <i class="fa-solid fa-envelope"></i>
         </div>
     </div>
-
+    <script src="/assets/Javascript/app.js"></script>
 
 </body>
 </html>
