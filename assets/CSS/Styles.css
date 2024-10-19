@@ -21,6 +21,7 @@
   --box-shadow1: 0 3px 15px rgba(0,0,0,.2) ;
 }
 
+/* Body */
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -51,6 +52,7 @@ section {
   padding: 3rem 18rem;
 }
 
+/* Sections */
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
@@ -91,6 +93,9 @@ section {
   display: block;
   animation: scaleAnim 1s ease-in-out;
 }
+
+/* Keyframe Abschnitt*/
+
 @keyframes scaleAnim {
   0% {
     transform: translateY(-100%) scaleY(0);
@@ -99,6 +104,28 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
+
+/* Animation für das Ausfahren der Progressbar */
+@keyframes growBar {
+  from {
+      width: 0%; 
+  }
+  to {
+      width: 40%; 
+  }
+}
+@keyframes growBarENG {
+  from {
+      width: 0%; 
+  }
+  to {
+      width: 30%; 
+  }
+}
+
+
+
+/* Controls */ 
 
 .controls {
   position: fixed;
@@ -136,6 +163,8 @@ section {
   color: var(--color-grey2);
   pointer-events: none;
 }
+
+/* Header Style */ 
 
 .header-content {
   display: grid;
@@ -242,6 +271,7 @@ section {
   transform: translateX(0);
 }
 
+/* Über mich = Main content style */
 .main-title {
   text-align: center;
 }
@@ -264,4 +294,87 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
-}/*# sourceMappingURL=Styles.css.map */
+}
+
+/* Über mich = Left-about h4 titel*/
+.left-about h4 {
+  font-size: 4rem;
+  margin-top: 9rem;
+}
+/* über mich = Left about P */ 
+.left-about p{
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.left-about .btn-con{
+  margin-top: 8rem;
+}
+/* über mich = left about Sprachen */  
+.about-container .left-about .sprachen .progressbar .language-label{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: var(--color-white);
+  
+}
+.about-container .left-about .sprachen .progressbar .progress-german span {
+  font-size: 2rem;
+  background-color: var(--color-secondary); 
+  display: block;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: var(--color-primary);
+  font-weight: bold;
+  line-height: 4rem; /* Vertikale Zentrierung */
+  border-radius: 20px; /* Abgerundete Ecken */
+
+  /* Animation auf die Progressbar */
+  width: 0; 
+  animation: growBar 3s ease-out forwards; 
+  animation-delay: 1s; 
+
+}
+.about-container .left-about .sprachen .progressbar .progress-french span {
+  font-size: 2rem;
+  background-color: var(--color-secondary); 
+  display: block;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: var(--color-primary);
+  font-weight: bold;
+  line-height: 4rem; /* Vertikale Zentrierung */
+  border-radius: 20px; /* Abgerundete Ecken */
+
+/* Animation auf die Progressbar */
+  width: 0; 
+  animation: growBar 3s ease-out forwards; 
+  animation-delay: 1s; 
+
+
+}
+.about-container .left-about .sprachen .progressbar .progress-english span {
+  font-size: 2rem;
+  background-color: var(--color-secondary); 
+  display: block;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: var(--color-primary);
+  font-weight: bold;
+  line-height: 4rem;
+  border-radius: 20px;
+
+  /* Animation auf die Progressbar */
+  width: 0; 
+  animation: growBarENG 3s ease-out forwards; 
+  animation-delay: 1s; 
+}
+.about-container .left-about .sprachen .progressbar .progress {
+  background-color: var(--color-white); /* Hintergrundfarbe des leeren Balkens */
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
