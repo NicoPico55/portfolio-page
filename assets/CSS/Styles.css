@@ -36,12 +36,14 @@ a {
   color: inherit;
   font-family: inherit;
 }
+/*-----------------------------------------Header------------------------------*/
 
 header {
   height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
+
 
 section {
   min-height: 100vh;
@@ -146,11 +148,11 @@ section {
   color: var(--color-white) !important;
 }
 .controls .control {
-  padding: 5rem;
+  padding: 2rem;
   cursor: pointer;
   background-color: var(--color-grey4);
-  width: 55px;
-  height: 55px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -159,7 +161,7 @@ section {
   box-shadow: var(--box-shadow1);
 }
 .controls .control i {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--color-grey2);
   pointer-events: none;
 }
@@ -180,16 +182,16 @@ section {
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
-  width: 65%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   background-color: var(--color-secondary);
   position: absolute;
-  margin-top: 40rem;
+  margin-top: 19rem;
   left: 4;
   top: 0;
   z-index: -1;
   clip-path: circle(46% at 50% 50%);
-  margin-left: 10rem;
+  margin-left: 20rem;
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -209,6 +211,14 @@ section {
   filter: greyscale(100%);
 }
 
+.header-content .left-header .eagle img {
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 7.5rem;  
+    margin-top: 0px;  
+    z-index: 1000;   
+}
 
 
 
@@ -219,19 +229,19 @@ section {
   padding-right: 18rem;
 }
 .header-content .right-header .name {
-  font-size: 9rem;
+  font-size: 2rem;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
 .header-content .right-header p {
   margin: 1.5rem;
-  line-height: 5rem;
-  font-size: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
 }
 
 /*------------------------------------------------------------------------------*/
-/* Button Style */
+/* Download Button Style */
 
 .btn-con {
   display: flex;
@@ -243,25 +253,25 @@ section {
   color: inherit;
   font-weight: 600;
   position: relative;
-  border: 5px solid var(--color-secondary);
+  border: 3px solid var(--color-secondary);
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 .main-btn .btn-text {
-  padding: 0 2rem;
-  font-size: 2.5rem;
+  padding: 0 1rem;
+  font-size: 100%;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 19%;
-  padding: 2rem;
+  border-radius: 2.5%;
+  padding: 1rem;
 }
 .main-btn .btn-icon i {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .main-btn::before {
   content: "";
@@ -279,6 +289,9 @@ section {
   transform: translateX(0);
 }
 
+
+
+
 /*--------------------------------------------------------------------------------*/
 /* Über mich = Main content style */
 .main-title {
@@ -287,32 +300,33 @@ section {
 .main-title h2 {
   position: relative;
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 700;
+  margin-top: -2rem;
 }
 .main-title h2 span {
   color: var(--color-secondary);
 }
 .main-title h2 .bg-text {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   color: var(--color-grey5);
   transition: all 0.4s ease-in-out;
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 1rem;
 }
 
 /* Über mich = Left-about h4 titel*/
 .left-about h4 {
-  font-size: 4rem;
-  margin-top: 9rem;
+  font-size: 1.5rem;
+  margin-top: 7rem;
 }
 /* über mich = Left about P */ 
 .left-about p{
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 3rem;
 }
 .left-about .btn-con{
@@ -320,13 +334,13 @@ section {
 }
 /* über mich = left about Sprachen */  
 .about-container .left-about .sprachen .progressbar .language-label{
-    font-size: 4rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: var(--color-white);
   
 }
 .about-container .left-about .sprachen .progressbar .progress-german span {
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: var(--color-secondary); 
   display: block;
   height: 100%;
@@ -334,8 +348,8 @@ section {
   padding-right: 10px;
   color: var(--color-primary);
   font-weight: bold;
-  line-height: 4rem; /* Vertikale Zentrierung */
-  border-radius: 20px; /* Abgerundete Ecken */
+  line-height: 2rem; /* Vertikale Zentrierung */
+  border-radius: 10px; /* Abgerundete Ecken */
 
   /* Animation auf die Progressbar */
   width: 0; 
@@ -344,7 +358,7 @@ section {
 
 }
 .about-container .left-about .sprachen .progressbar .progress-french span {
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: var(--color-secondary); 
   display: block;
   height: 100%;
@@ -352,8 +366,8 @@ section {
   padding-right: 10px;
   color: var(--color-primary);
   font-weight: bold;
-  line-height: 4rem; /* Vertikale Zentrierung */
-  border-radius: 20px; /* Abgerundete Ecken */
+  line-height: 2rem; /* Vertikale Zentrierung */
+  border-radius: 10px; /* Abgerundete Ecken */
 
 /* Animation auf die Progressbar */
   width: 0; 
@@ -363,7 +377,7 @@ section {
 
 }
 .about-container .left-about .sprachen .progressbar .progress-english span {
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: var(--color-secondary); 
   display: block;
   height: 100%;
@@ -371,8 +385,8 @@ section {
   padding-right: 10px;
   color: var(--color-primary);
   font-weight: bold;
-  line-height: 4rem;
-  border-radius: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
 
   /* Animation auf die Progressbar */
   width: 0; 
@@ -394,3 +408,20 @@ section {
 }
 
 
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*Kontakt Seite*/
+#kontakt .MessageForm{
+  margin-left: 40rem;
+  margin-top: 15rem;
+
+
+}
