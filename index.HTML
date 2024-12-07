@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/CSS/CSSProtfolio.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+         emailjs.init({publicKey: "Nq6-CiiCmN1wx8f0x",});})();
+    </script>
 </head>
 <body class="main-content">
     
@@ -139,11 +145,10 @@
                 <h2> <span> kontakt </span> </h2> <br>
             </div>
             <div class="MessageForm">
-                <input type="text" placeholder="Full Name*" required /> <br>
-                <input type="email" placeholder="Email*" required /> <br>
-                <input type="number" placeholder="Phone-NR." /> <br> <br>
-                <textarea placeholder="Message/Nachricht*" required></textarea> <br>
-                <button> Send </button>
+                <input type="text" id="name" placeholder="Full Name*" required /> <br>
+                <input type="email" id="email_id" placeholder="Email*" required /> <br>
+                <textarea id="message" placeholder="Message/Nachricht*" required></textarea> <br>
+                <button onclick="SendMail()"> Send </button>
 
 
 

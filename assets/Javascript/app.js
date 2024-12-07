@@ -40,3 +40,13 @@ function PageTransitions(){
 PageTransitions();
 
 
+function SendMail(){
+    var params = {
+        from_name : document.getElementById("name").value,
+        email_id : document.getElementById("email_id").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("n.bolt", "template_3a71pak",params).then(function (res){
+        alert("Vielen Dank für deine Nachricht ich werde mich NICHT bei dir melden." + res.status )
+    })
+}
