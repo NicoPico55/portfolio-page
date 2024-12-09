@@ -220,6 +220,16 @@ section {
     z-index: 1000;   
 }
 
+#home .header-content .left-header .welcome{
+  margin-left: 16rem;
+  margin-bottom: 54rem;
+}
+
+#home .header-content .left-header .welcome .FullName{
+  color: var(--color-secondary);
+}
+
+
 
 
 .header-content .right-header {
@@ -239,6 +249,8 @@ section {
   line-height: 3rem;
   font-size: 1.5rem;
 }
+
+
 
 /*------------------------------------------------------------------------------*/
 /* Download Button Style */
@@ -407,10 +419,37 @@ section {
   color: var(--color-white);
 }
 
+#portfolio .portfolio-container .left-about{
+
+}
 
 
 
 
+
+
+#portfolio .portfolio-container .right-about{
+  margin-left: 50rem;
+  margin-top: 15rem;
+
+}
+
+#portfolio .portfolio-container .right-about .a .img{
+  
+  
+
+}
+
+
+#portfolio .portfolio-container .left-about .date{
+  color: var(--color-secondary);
+
+}
+
+#portfolio .portfolio-container .right-about .date{
+  color: var(--color-secondary);
+
+}
 
 
 
@@ -420,8 +459,37 @@ section {
 /*-------------------------------------------------------------------------------------------*/
 /*Kontakt Seite*/
 #kontakt .MessageForm{
-  margin-left: 40rem;
-  margin-top: 15rem;
+  margin-left: 37rem;
+  margin-top: 5rem;
+}
 
+#kontakt .MessageForm textarea{
+  width: 300px;
+  height: 120px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;   
+}
 
+#kontakt .MessageForm input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#kontakt .MessageForm button{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: var(--color-secondary);
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#kontakt .Text{
+  margin-left: 30rem;
 }
