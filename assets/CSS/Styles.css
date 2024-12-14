@@ -193,13 +193,12 @@ section {
   clip-path: circle(46% at 50% 50%);
   margin-left: 20rem;
 }
-.header-content .left-header .image {
+.header-content .left-header .image{
   border-radius: var(--br-sm-2);
-  height: 50%;
-  width: 68%;
-  margin-top: 10rem;
-  margin-left: 4rem;
-  background-color: var(--color-black);
+  height: 150%;
+  width: 150%;
+  margin-top: 3rem;
+  margin-left: 3.5rem;
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -427,19 +426,52 @@ section {
 
 
 #portfolio .portfolio-container .left-about .GBL{
-  width: 15%;
+  width: 60%;
+  max-width: 60%;
+  margin-left: 500%;
+  margin-top: -75%;
+  border-radius: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   height: auto;
-
 }
 
 #portfolio .portfolio-container .left-about .secu{
  margin-top: 3rem;
- 
 }
+
+#portfolio .portfolio-container .left-about .selogo{
+  width: 60%;
+  max-width: 60%;
+  margin-left: 200%;
+  margin-top: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+
+#portfolio .portfolio-container .left-about .Swisscom{
+  margin-top: 3rem;
+ }
+
+ #portfolio .portfolio-container .left-about .swiss{
+  width: 30%;
+  max-width: 30%;
+  margin-left: 100%;
+  margin-top: -15%;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+
+}
+
+
+
 
 #portfolio .portfolio-container .left-about .date{
   color: var(--color-secondary);
@@ -463,6 +495,7 @@ section {
 #kontakt .MessageForm textarea{
   width: 90%;
   height: 120px;
+  max-width: 250px;
   margin-top: 10px;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;   
@@ -470,6 +503,7 @@ section {
 
 #kontakt .MessageForm input{
   width: 90%;
+  max-width: 250px;
   height: 30px;
   border-radius: 5px;
   margin-top: 5%;
@@ -480,6 +514,7 @@ section {
 
 #kontakt .MessageForm button{
   width: 90%;
+  max-width: 250px;
   height: 30px;
   border-radius: 10px;
   background-color: var(--color-secondary);
