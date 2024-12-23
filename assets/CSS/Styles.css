@@ -1,6 +1,8 @@
-@import "assets/CSS/media.css"
+@import "assets/CSS/media.css";
 
-* {
+
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -804,3 +806,4 @@ section {
 }
 
 
+@import "assets/CSS/media.css"
