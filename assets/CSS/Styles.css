@@ -1,3 +1,5 @@
+@import "assets/CSS/media.css"
+
 * {
   margin: 0;
   padding: 0;
@@ -802,4 +804,3 @@ section {
 }
 
 
-@import "assets/CSS/media.css"
