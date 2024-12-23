@@ -118,3 +118,50 @@
         margin: 1rem .3rem;
     }
 }
+
+@media (min-width: 851px) and (max-width: 1800px){
+
+    .header-content{
+        padding: 0 8rem;
+        padding-top: 6rem;
+    }
+    
+    .header-content .right-header{
+        padding-right: 8rem;
+    }
+
+    .about-container .left-about{
+        padding-right: 3rem;
+    }
+
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 4rem;
+    }
+
+
+    .erfolge{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 4rem;
+    }
+
+
+    .kontakt-content-con{
+        padding: 3.5rem 6rem;
+    }
+
+ 
+    section{
+        padding: 3rem 10rem;
+    }
+
+    .about-stats .progress-bars{
+        grid-gap: 1.5rem;
+    }
+
+ 
+    .timeline{
+        grid-gap: 1.5rem;
+    }  
+
+}
