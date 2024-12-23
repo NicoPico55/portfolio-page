@@ -25,7 +25,7 @@
   --box-shadow1: 0 3px 15px rgba(0,0,0,.2) ;
 }
 
-/* Body */
+/*---------------------------- Body--------------------------------------------- */
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
